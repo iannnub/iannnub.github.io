@@ -1,0 +1,122 @@
+
+body {
+    text-align: center;
+    background: linear-gradient(135deg, #0099ff, #ff0000);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.information {
+    background-color: rgba(9, 0, 178, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ket {
+    margin-top: 20px;
+}
+
+.ket p {
+    margin: 5px 0;
+}
+
+.motivasi {
+    margin-top: 20px;
+}
+
+.motivasi p {
+    text-align: justify;
+}
+
+
+/* Gaya untuk foto */
+img {
+    border-radius: 50%; /* Membuat foto menjadi lingkaran */
+    width: 200px; /* Mengatur ukuran gambar */
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada gambar */
+    transition: transform 0.3s; /* Menambahkan efek transisi saat gambar dihover */
+}
+
+img:hover {
+    transform: scale(1.1); /* Membesarkan gambar saat dihover */
+}
+
+/* Information Section Styles */
+.information {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a border to separate information items */
+.information p:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* navbar */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ff4500;
+}
+
+/* Media queries untuk responsif */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
